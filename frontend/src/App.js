@@ -100,13 +100,13 @@ const App = () => {
 
 
     window.onbeforeunload = function() { return "Prevent reload" }
-    window.ethereum.on('accountsChanged', handleAccountsChanged);
-
-    window.ethereum.on('chainChanged', (_chainId) => {
-      console.log(_chainId);
-      setCurrentChainID(() => parseInt(_chainId, 16))
-      //window.location.reload()
-    });
+    // window.ethereum.on('accountsChanged', handleAccountsChanged);
+    //
+    // window.ethereum.on('chainChanged', (_chainId) => {
+    //   console.log(_chainId);
+    //   setCurrentChainID(() => parseInt(_chainId, 16))
+    //   //window.location.reload()
+    // });
 
 
   }, []);
